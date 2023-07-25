@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="end"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_gravity="fill"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_gravity="fill"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_gravity="fill"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_gravity="fill"
+            android:text="/" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_gravity="fill"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_gravity="fill"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_gravity="fill"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_gravity="fill"
+            android:text="*" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_gravity="fill"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_gravity="fill"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_gravity="fill"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_gravity="fill"
+            android:text="-" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/button0"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_gravity="fill"
+            android:text="." />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_gravity="fill"
+            android:text="+" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="4"
+            android:text="=" />
+
+    </GridLayout>
+    <net.pubnative.lite.sdk.views.HyBidAdView
+        android:id="@+id/bannerAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="YOUR_BANNER_AD_UNIT_ID" />
+
+</RelativeLayout>
