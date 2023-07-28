@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Initialize HyBid SDK
-        HyBid.initialize(this, "YOUR_HYBID_APP_TOKEN");
+        HyBid.initialize(this, "dde3c298b47648459f8ada4a982fa92d");
         // Find the banner ad view
         bannerAdView = findViewById(R.id.bannerAdView);
 
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //load banner ad
     private void loadBannerAd() {
-            bannerAdView.load("ZONE_ID", new PNAdView.Listener() {
+            bannerAdView.load("1", new PNAdView.Listener() {
                 @Override
                 public void onAdLoaded() {
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //load interstitial ad
     private void loadInterstitialAd() {
-            mInterstitial = new HyBidInterstitialAd(this,"ZONE_ID", new HyBidInterstitialAd.Listener() {
+            mInterstitial = new HyBidInterstitialAd(this,"1", new HyBidInterstitialAd.Listener() {
                 @Override
                 public void onInterstitialLoaded() {
 

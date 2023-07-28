@@ -106,13 +106,13 @@
             android:layout_gravity="fill"
             android:layout_columnSpan="4"
             android:text="=" />
-
+        <net.pubnative.lite.sdk.views.HyBidAdView
+            android:id="@+id/bannerAdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="YOUR_BANNER_AD_UNIT_ID" />
     </GridLayout>
-    <net.pubnative.lite.sdk.views.HyBidAdView
-        android:id="@+id/bannerAdView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:adSize="BANNER"
-        app:adUnitId="YOUR_BANNER_AD_UNIT_ID" />
+
 
 </RelativeLayout>
